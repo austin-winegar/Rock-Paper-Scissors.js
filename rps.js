@@ -6,16 +6,25 @@ tieScore = 0
 
 // monitor buttons for clicks
 // run functions to set userPick, computerPick, scoreTally
-document.getElementById('btn').addEventListener('click', functionGroup);
-document.getElementById('btn1').addEventListener('click', functionGroup);
-document.getElementById('btn2').addEventListener('click', functionGroup);
+document.getElementById('btn').addEventListener('click', btnClick)
+document.getElementById('btn').addEventListener('click', pickRps)
+document.getElementById('btn').addEventListener('click', decideWinner)
+
+document.getElementById('btn1').addEventListener('click', btnClick1)
+document.getElementById('btn1').addEventListener('click', pickRps)
+document.getElementById('btn1').addEventListener('click', decideWinner)
+
+document.getElementById('btn2').addEventListener('click', btnClick2)
+document.getElementById('btn2').addEventListener('click', pickRps)
+document.getElementById('btn2').addEventListener('click', decideWinner)
+
 
 // group all functions into one function
-function functionGroup() {
-    btnClick ()
-    pickRps ()
-    decideWinner ()
-}
+// function functionGroup() {
+//     btnClick ()
+//     pickRps ()
+//     decideWinner ()
+// }
 
 // define userPick
 function btnClick () {
